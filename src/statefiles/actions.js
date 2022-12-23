@@ -1,9 +1,8 @@
 import axios from 'axios';
 
-export const getProducts=async()=>{
-let products=await axios.get("https://dummyjson.com/products")
-  console.log(products)
-    return(dispatch)=>{
-        dispatch({type:"getproducts",payload:products})
-    }
-}
+export const getProducts=()=>{
+return(dispatch)=>{
+  axios.get("https://dummyjson.com/products").then(res =>{
+        dispatch({type:"getproducts",payload:res.data.products})
+})
+}}

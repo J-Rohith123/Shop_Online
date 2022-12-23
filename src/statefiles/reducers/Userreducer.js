@@ -3,10 +3,10 @@ import React from 'react'
 let stateinit={
     user:{cart:[{}]},
     users:{},
-    products:[]
+    products:[{id:1,name:"none",images:[]}]
 }
 function Userreducer(state=stateinit,action) {
-  switch(action){
+  switch(action.type){
     case "getproducts": return{...state,products:action.payload}
 
     default: return state

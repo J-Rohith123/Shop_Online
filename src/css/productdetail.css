@@ -1,0 +1,41 @@
+.productcontainer{
+    padding: 1%;
+    display: flex;
+}
+.productcontainer .imagesection{
+  flex: 1;
+  height: 450px;
+  display: flex;
+  padding:1%;
+  flex-direction: column;
+}
+.productcontainer .imagesection .images{
+    width: 98%;
+  display: flex;
+  flex: 9;
+  justify-content: space-evenly;
+}
+.productcontainer .imagesection .images .previews{
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+.productcontainer .imagesection .images img{
+    width: 80%;
+    border-radius: 10px;
+}
+.productcontainer .imagesection .buttons{
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons Button{
+    width: 49%;
+}
+.detailsection{
+    flex: 2;
+    padding: 1%;
+}

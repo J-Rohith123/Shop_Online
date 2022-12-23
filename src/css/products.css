@@ -1,0 +1,9 @@
+.productsbody{
+    width: 94%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
