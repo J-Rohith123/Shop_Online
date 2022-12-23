@@ -1,12 +1,13 @@
 import React from 'react'
 
-let state={
+let stateinit={
     user:{cart:[{}]},
-    users:{}
+    users:{},
+    products:[]
 }
-function Userreducer(state=state,action) {
+function Userreducer(state=stateinit,action) {
   switch(action){
-
+    case "getproducts": return{...state,products:action.payload}
 
     default: return state
   }
