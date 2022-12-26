@@ -7,3 +7,21 @@
     overflow-y: auto;
     flex-wrap: wrap;
 }
+
+.categories{
+padding:0.5rem 0.5rem 0 0.5rem ;
+display: flex;
+gap:1%;
+overflow-x: auto;
+
+}
+/* .categories::-webkit-scrollbar{
+    display: none;
+} */
+.categories p{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgb(186, 214, 235);
+    min-width: max-content;
+}

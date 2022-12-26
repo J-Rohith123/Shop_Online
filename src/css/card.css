@@ -14,11 +14,11 @@
     transform: scale(1.02);
 }
 .cardbody img{
-    width: 90%;
+    width: 100%;
     aspect-ratio: 1.7;
     margin: 0;
     padding: 0;
-    
+    object-fit: contain;
  border-radius: 10px;
 }
 .cardbody h4{

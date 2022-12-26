@@ -5,13 +5,16 @@ import * as actions from './statefiles/actions'
 import { BrowserRouter as Router,Routes,Route, BrowserRouter } from 'react-router-dom';
 import Products from './components/Products'
 import Home from './components/Home'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import ProductDetails from './components/ProductDetails';
 
 function App() {
     const dispatch=useDispatch()
+    
   useLayoutEffect(()=>{
     dispatch(actions.getProducts())
+    dispatch(actions.setUser())
+
    },[])
 
   return (

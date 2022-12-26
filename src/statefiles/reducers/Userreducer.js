@@ -9,6 +9,8 @@ function Userreducer(state=stateinit,action) {
   switch(action.type){
     case "getproducts": return{...state,products:action.payload}
 
+    case 'setuser': return{...state,user:{...action.payload}}
+
     default: return state
   }
 }

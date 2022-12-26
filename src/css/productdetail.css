@@ -16,14 +16,16 @@
   justify-content: space-evenly;
 }
 .productcontainer .imagesection .images .previews{
-  width: 20%;
-  height: 90%;
+  width: 25%;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  gap: 3%;
+  gap: 2%;
+  overflow-y: auto;
 }
 .productcontainer .imagesection .images img{
-    width: 80%;
+    width: 75%;
+    object-fit: contain;
     border-radius: 10px;
 }
 .productcontainer .imagesection .buttons{
