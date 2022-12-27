@@ -1,0 +1,41 @@
+.cartcard{
+    width: 94%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cartcard .content{
+    display: flex;
+}
+.cartcard .content .imgbody{
+ width: 40%;
+ padding: 2%;
+}
+.cartcard .content .imgbody img{
+    width: 90%;
+    border-radius: 10px;
+}
+.cartcard .buttons{
+    display: flex;
+   gap: 1%;
+   padding: 2%;
+}
+.cartcard .buttons .quantity{
+    flex: 1;
+   display: flex;
+}
+.cartcard .buttons .quantity button{
+    width: auto;
+}
+.cartcard .buttons .quantity p{
+    width: 33%;
+    vertical-align: middle;
+    text-align: center;
+}
+.cartcard .buttons Button{
+    flex: 1;
+}
+.cartcard .content .details{
+    
+}

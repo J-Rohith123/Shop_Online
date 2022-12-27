@@ -7,6 +7,7 @@ import Products from './components/Products'
 import Home from './components/Home'
 import { useDispatch, useSelector } from 'react-redux';
 import ProductDetails from './components/ProductDetails';
+import Cart from './components/Cart';
 
 function App() {
     const dispatch=useDispatch()
@@ -25,6 +26,7 @@ function App() {
       <Route exact path="/" element={<Home/>} />
         <Route path="/products" element={<Products/>} />
         <Route path="/productdetails" element={<ProductDetails/>} />
+        <Route path="/cart" element={<Cart/>} />
       </Routes>
     </BrowserRouter>
       

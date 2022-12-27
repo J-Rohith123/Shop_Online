@@ -10,6 +10,8 @@ function Userreducer(state=stateinit,action) {
     case "getproducts": return{...state,products:action.payload}
 
     case 'setuser': return{...state,user:{...action.payload}}
+    
+    case 'addtocart': return{...state,user:{...state.user,cart:[...state.user.cart,action.payload]}}
 
     default: return state
   }

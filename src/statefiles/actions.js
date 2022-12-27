@@ -17,3 +17,8 @@ export const setUser=()=>{
     })
   }
 }
+export const addtocart=(product)=>{
+return(dispatch)=>{
+  dispatch({type:'addtocart',payload:product})
+}
+}
