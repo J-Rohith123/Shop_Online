@@ -29,7 +29,7 @@ function Cart() {
          <p style={{color:'GrayText',fontSize:'20px',margin:'20px 0 10px 0',fontFamily:'sans-serif',fontWeight:700}}>PRICE DETAILS</p>
          <hr style={{border:'1px solid gray',backgroundColor:'GrayText',borderRadius:'20px'}}/>
          <div className='itemsprice'>
-         <span><p>Price({cartitems.length} items) </p><p>Rs.{cartitems.reduce((acc,curr)=> acc+(curr.price*curr.quantity),0)}</p></span>
+         <span><p>Price({cartitems.length} {cartitems.length>1? 'items':'item'}) </p><p>Rs.{cartitems.reduce((acc,curr)=> acc+(curr.price*curr.quantity),0)}</p></span>
          <span><p>Discount</p><p style={{color:'green'}}> -Rs.{(cartitems.reduce((acc,curr)=> acc+((curr.price*curr.discountPercentage/100)*curr.quantity),0)).toFixed(2)}</p></span>
          <span><p>Delivery Charges</p><p style={{color:'green'}}>Free</p></span>
          </div>

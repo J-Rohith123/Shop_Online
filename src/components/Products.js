@@ -6,7 +6,7 @@ import '../css/products.css'
 function Products() {
   const products=useSelector(state =>state.products)
   const [displayproducts,setdisplayproducts]=useState([...products])
-  const categories=["smartphones","mens-shoes","mens-shirts","womens-shoes","womens-dresses","tops","furniture","home-decoration","groceries","skincare","fragrances","laptops"]
+  const categories=["smartphones","mens-shoes","automotive","motorcycle","womens-jewellery","lighting","mens-watches","womens-watches","womens-bags","mens-shirts","womens-shoes","womens-dresses","tops","furniture","home-decoration","groceries","skincare","sunglasses","fragrances","laptops"]
   const [selectedcates,setselectedcates]=useState([])
   useEffect(()=>{
    if(selectedcates.length >0){
@@ -14,6 +14,8 @@ function Products() {
    }else{
     setdisplayproducts(products)
    }
+   products.map((item)=>console.log(item.category))
+   
   },[selectedcates])
   return (
     <div className='productspage'>

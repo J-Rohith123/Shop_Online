@@ -7,7 +7,7 @@ export default function CardLayout(props) {
     const item=props.product
   return (
    <div className='cardbody' onClick={()=>{ navigate('/productdetails',{state:item}) }} >
-    <img src={item.thumbnail} alt={item.title} /> 
+    <img src={item.images[0]} alt={item.title} /> 
     <h4>{item.title}</h4> 
     <p>{item.description}</p>
    </div>
