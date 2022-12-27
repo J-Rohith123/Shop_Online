@@ -13,6 +13,10 @@ function Userreducer(state=stateinit,action) {
     
     case 'addtocart': return{...state,user:{...state.user,cart:[...state.user.cart,action.payload]}}
 
+    case 'updatecart': return{...state,user:{...state.user,cart:[...state.user.cart?.filter(val => val.id != action.payload.id),action.payload]}}
+    
+    case 'removefromcart': return{...state,user:{...state.user,cart:[...state.user.cart?.filter(val => val.id != action.payload)]}}
+
     default: return state
   }
 }

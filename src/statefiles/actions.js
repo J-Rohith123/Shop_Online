@@ -22,3 +22,13 @@ return(dispatch)=>{
   dispatch({type:'addtocart',payload:product})
 }
 }
+export const updateCart=(product)=>{
+  return(dispatch)=>{
+    dispatch({type:'updatecart',payload:product})
+  }
+}
+export const removeFromCart=(id)=>{
+  return(dispatch)=>{
+    dispatch({type:'removefromcart',payload:id})
+  }
+  }

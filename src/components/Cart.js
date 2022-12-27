@@ -1,5 +1,5 @@
 import { Button } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router'
 import '../css/cart.css'
@@ -8,6 +8,9 @@ import Cartcard from './Cartcard'
 function Cart() {
     
     const cartitems=useSelector(state=> state.user.cart)
+    useEffect(()=>{
+      console.log(cartitems)
+    },[cartitems])
   return (
         (cartitems?.length > 0)? <CartFilled/>:<CartEmpty/>
   )
@@ -23,7 +26,16 @@ function Cart() {
         }
         </div>
         <div className='pricebody'>
-         <p>price</p>
+         <p style={{color:'GrayText',fontSize:'20px',margin:'20px 0 10px 0',fontFamily:'sans-serif',fontWeight:700}}>PRICE DETAILS</p>
+         <hr style={{border:'1px solid gray',backgroundColor:'GrayText',borderRadius:'20px'}}/>
+         <div className='itemsprice'>
+         <span><p>Price({cartitems.length} items) </p><p>Rs.{cartitems.reduce((acc,curr)=> acc+(curr.price*curr.quantity),0)}</p></span>
+         <span><p>Discount</p><p style={{color:'green'}}> -Rs.{(cartitems.reduce((acc,curr)=> acc+((curr.price*curr.discountPercentage/100)*curr.quantity),0)).toFixed(2)}</p></span>
+         <span><p>Delivery Charges</p><p style={{color:'green'}}>Free</p></span>
+         </div>
+         <hr style={{border:'0.5px solid gray',backgroundColor:'GrayText',borderRadius:'20px'}}/>
+         <span style={{margin:'20px 0 20px 0'}}><b>Total Amount </b>
+         <p>Rs.{(cartitems.reduce((acc,curr)=> acc+(curr.price*curr.quantity),0)-cartitems.reduce((acc,curr)=> acc+((curr.price*curr.discountPercentage/100)*curr.quantity),0)).toFixed(2)}</p></span>
         </div>
         </div>
     )

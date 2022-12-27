@@ -1,10 +1,14 @@
 import { Button } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 import '../css/cartcard.css'
+import * as actions from '../statefiles/actions'
 
 function Cartcard(props) {
+  const dispatch=useDispatch()
     let product=props.product
     let discountedprice=product.price-(product.price*product.discountPercentage/100)
+    
   return (
     <div className='cartcard'> {/*root */}
     <div className='content'>  {/*parent1 */}
@@ -17,11 +21,11 @@ function Cartcard(props) {
     </div>
     <div className='buttons'>
     <div className='quantity'>
-    <button >➖</button>
+    <button onClick={()=> dispatch(actions.updateCart({...product,quantity:product.quantity-1}))} disabled={(product.quantity==1)?true:false} >➖</button>
     <p>{product.quantity}</p>
-    <button >➕</button>
+    <button onClick={()=>dispatch(actions.updateCart({...product,quantity:product.quantity+1}))} >➕</button>
     </div>
-    <Button variant='contained' >Remove from Cart</Button>
+    <Button variant='contained' onClick={()=>dispatch(actions.removeFromCart(product.id))} >Remove from Cart</Button>
     <Button variant='contained' >Save for Later</Button>
     </div>
     </div>

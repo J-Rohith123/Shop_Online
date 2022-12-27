@@ -14,6 +14,7 @@
 }
 .cartcard .content .imgbody img{
     width: 90%;
+    aspect-ratio: 1.25;
     border-radius: 10px;
 }
 .cartcard .buttons{
@@ -35,7 +36,4 @@
 }
 .cartcard .buttons Button{
     flex: 1;
-}
-.cartcard .content .details{
-    
 }
