@@ -6,7 +6,7 @@ import '../css/cart.css'
 import Cartcard from './Cartcard'
 
 function Cart() {
-    
+  const user=useSelector(state=> state.user)
     const cartitems=useSelector(state=> state.user.cart)
     useEffect(()=>{
       console.log(cartitems)
@@ -21,7 +21,7 @@ function Cart() {
         <p style={{fontWeight:600,fontFamily:'sans-serif',fontSize:'1.5rem'}}>🛒Cart</p>
         {
             cartitems?.map((item)=>{
-              return  <Cartcard product={item} />
+              return  <Cartcard product={item} user={user} />
             })
         }
         </div>

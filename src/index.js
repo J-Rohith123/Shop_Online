@@ -7,10 +7,13 @@ import { Provider } from 'react-redux';
 import { store } from './statefiles/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+document.getElementById('root').style.height='100vh'
 root.render(
+  <React.StrictMode>
   <Provider store={store}>
     <App />
   </Provider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

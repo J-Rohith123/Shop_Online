@@ -12,6 +12,7 @@ import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 function ProductDetails() {
     const state=useLocation().state
     const navigate=useNavigate()
+    const user=useSelector(state=> state.user)
     const cartitems=useSelector(state=> state.user.cart)
     const dispatch=useDispatch()
     let discountedprice=state.price-(state.price*state.discountPercentage/100)
@@ -33,7 +34,7 @@ function ProductDetails() {
          confirm=true
        })
        if(!confirm){
-       dispatch(actions.addtocart({...state,quantity:1}))
+       dispatch(actions.addtocart({...state,quantity:1},user))
        document.getElementById('add').innerHTML='Go to Cart'
        }
     }

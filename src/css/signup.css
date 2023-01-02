@@ -1,0 +1,35 @@
+.signupcontainer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.signupbody{
+    width: 25%;
+    padding: 1%;
+    height: fit-content;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    align-items: center;
+}
+form{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.button{
+    width: 60%;
+}
+.errormsg{
+    color: red;
+    font-weight: 300;
+    font-size: 0.75rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+sup{
+    color: red;
+}

@@ -24,11 +24,11 @@ function Cartcard(props) {
     </div>
     <div className='buttons'>
     <div className='quantity'>
-    <button onClick={()=> dispatch(actions.updateCart({...product,quantity:product.quantity-1}))} disabled={(product.quantity==1)?true:false} >➖</button>
+    <button onClick={()=> dispatch(actions.updateCart({...product,quantity:product.quantity-1},props.user))} disabled={(product.quantity==1)?true:false} >➖</button>
     <p>{product.quantity}</p>
-    <button onClick={()=>dispatch(actions.updateCart({...product,quantity:product.quantity+1}))} >➕</button>
+    <button onClick={()=>dispatch(actions.updateCart({...product,quantity:product.quantity+1},props.user))} >➕</button>
     </div>
-    <Button variant='contained' color='error' onClick={()=>dispatch(actions.removeFromCart(product.id))} ><DeleteIcon/>&nbsp;Remove from Cart</Button>
+    <Button variant='contained' color='error' onClick={()=>dispatch(actions.removeFromCart(product.id,props.user))} ><DeleteIcon/>&nbsp;Remove from Cart</Button>
     <Button variant='contained' ><FavoriteIcon/>&nbsp;Move to Favorites</Button>
     </div>
     </div>

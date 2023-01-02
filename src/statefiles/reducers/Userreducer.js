@@ -1,9 +1,10 @@
 import React from 'react'
 
 let stateinit={
-    user:{cart:[{}]},
-    users:{},
-    products:[{id:1,name:"none",images:[]}]
+    user:{email:'',name:'',id:'',phone:0,cart:[{}]},
+    users:[{email:'',name:'',id:'',phone:0}],
+    products:[{id:1,name:"none",images:[]}],
+    loggedin:false
 }
 function Userreducer(state=stateinit,action) {
   switch(action.type){
