@@ -10,14 +10,18 @@ import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
 import Login from './components/Login';
 import Signup from './components/Signup'
+import Cookies from 'js-cookie';
 
 function App() {
     const dispatch=useDispatch()
     
   useLayoutEffect(()=>{
     dispatch(actions.getProducts())
-    dispatch(actions.setUser())
-
+    dispatch(actions.getUsers())
+    let cookieuser=Cookies.get('loggedinuser')
+    if(cookieuser!==undefined){
+      dispatch(actions.setUser(cookieuser))
+    }
    },[])
 
   return (

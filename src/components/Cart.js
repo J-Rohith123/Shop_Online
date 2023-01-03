@@ -12,7 +12,7 @@ function Cart() {
       console.log(cartitems)
     },[cartitems])
   return (
-        (cartitems?.length > 0)? <CartFilled/>:<CartEmpty/>
+        (cartitems?.length > 0 && cartitems[0].id!==undefined)? <CartFilled/>:<CartEmpty/>
   )
   function CartFilled(){
     return(

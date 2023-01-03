@@ -1,18 +1,28 @@
 import axios from 'axios';
+import Cookies from 'js-cookie';
 
 export const getProducts=()=>{
 return(dispatch)=>{
   
   axios.get("https://dummyjson.com/products?limit=100").then(res =>{
-    console.log(res.data)
+    
         dispatch({type:"getproducts",payload:res.data.products})
 })
 }}
-
-export const setUser=()=>{
+export const getUsers=()=>{
   return(dispatch)=>{
-    axios.get("http://localhost:8000/users/1")
+    
+    axios.get("http://localhost:8000/users").then(res =>{
+      
+          dispatch({type:"getusers",payload:res.data})
+  })
+  }}
+
+export const setUser=(id)=>{
+  return(dispatch)=>{
+    axios.get("http://localhost:8000/users/"+id)
     .then(res =>{
+      Cookies.set('loggedinuser',id,{ expires:365 })
       dispatch({type:'setuser',payload:res.data})
     })
   }
@@ -37,4 +47,9 @@ export const removeFromCart=(id,user)=>{
   }
 export const addUser=(value)=>{
   axios.post("http://localhost:8000/users",value).catch(err => console.log(err))
+}
+export const logOut=()=>{
+  return(dispatch)=>{
+    dispatch({type:'logOut'})
+  }
 }

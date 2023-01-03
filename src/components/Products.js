@@ -1,13 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import CardLayout from './card'
 import '../css/products.css'
+import * as actions from '../statefiles/actions'
 
 function Products() {
+  const dispatch=useDispatch()
   const products=useSelector(state =>state.products)
   const [displayproducts,setdisplayproducts]=useState([...products])
   const categories=["smartphones","mens-shoes","automotive","motorcycle","womens-jewellery","lighting","mens-watches","womens-watches","womens-bags","mens-shirts","womens-shoes","womens-dresses","tops","furniture","home-decoration","groceries","skincare","sunglasses","fragrances","laptops"]
   const [selectedcates,setselectedcates]=useState([])
+  useEffect(()=>{
+    dispatch(actions.getProducts())
+    console.log(products)
+   },[])
+   useEffect(()=>{
+    setdisplayproducts(products)
+   },[products])
+
   useEffect(()=>{
    if(selectedcates.length >0){
     setdisplayproducts([...products.filter(item => selectedcates.includes(item.category))])
@@ -17,6 +27,7 @@ function Products() {
    products.map((item)=>console.log(item.category))
    
   },[selectedcates])
+  
   return (
     <div className='productspage'>
       <div className='categories'>

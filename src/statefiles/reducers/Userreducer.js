@@ -10,7 +10,11 @@ function Userreducer(state=stateinit,action) {
   switch(action.type){
     case "getproducts": return{...state,products:action.payload}
 
-    case 'setuser': return{...state,user:{...action.payload}}
+    case "getusers":return{...state,users:action.payload}
+
+    case 'setuser': return{...state,user:{...action.payload},loggedin:true}
+
+    case 'logOut': return{...state,user:{},loggedin:false}
     
     case 'addtocart': return{...state,user:{...state.user,cart:[...state.user.cart,action.payload]}}
 

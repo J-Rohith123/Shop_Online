@@ -19,6 +19,7 @@ function ProductDetails() {
     const [currentimage,setcurrentimage]=useState(0)
     useEffect(()=>{
      console.log(state)
+     dispatch(actions.getProducts())
      cartitems.map((item)=>{
        if(item.id===state.id) 
        document.getElementById('add').innerHTML='🛒 Go to Cart'

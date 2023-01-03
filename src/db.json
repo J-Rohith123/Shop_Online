@@ -2,7 +2,7 @@
   "users": [
     {
       "name": "Rohith",
-      "emailid": "rohith@gmail.com",
+      "email": "rohith@gmail.com",
       "password": "password@123",
       "phone": 9876543210,
       "cart": [
@@ -23,6 +23,66 @@
             "https://i.dummyjson.com/data/products/6/3.png",
             "https://i.dummyjson.com/data/products/6/4.jpg"
           ],
+          "quantity": 2
+        },
+        {
+          "id": 20,
+          "title": "Freckle Treatment Cream- 15gm",
+          "description": "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
+          "price": 70,
+          "discountPercentage": 16.99,
+          "rating": 4.06,
+          "stock": 140,
+          "brand": "Fair & Clear",
+          "category": "skincare",
+          "thumbnail": "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/20/1.jpg",
+            "https://i.dummyjson.com/data/products/20/2.jpg",
+            "https://i.dummyjson.com/data/products/20/3.jpg",
+            "https://i.dummyjson.com/data/products/20/4.jpg",
+            "https://i.dummyjson.com/data/products/20/thumbnail.jpg"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": 98,
+          "title": "3 lights lndenpant kitchen islang",
+          "description": "3 lights lndenpant kitchen islang dining room pendant rice paper chandelier contemporary led pendant light modern chandelier",
+          "price": 34,
+          "discountPercentage": 5.92,
+          "rating": 4.99,
+          "stock": 44,
+          "brand": "DADAWU",
+          "category": "lighting",
+          "thumbnail": "https://i.dummyjson.com/data/products/98/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/98/1.jpg",
+            "https://i.dummyjson.com/data/products/98/2.jpg",
+            "https://i.dummyjson.com/data/products/98/3.jpg",
+            "https://i.dummyjson.com/data/products/98/4.jpg",
+            "https://i.dummyjson.com/data/products/98/thumbnail.jpg"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": 12,
+          "title": "Brown Perfume",
+          "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+          "price": 40,
+          "discountPercentage": 15.66,
+          "rating": 4,
+          "stock": 52,
+          "brand": "Royal_Mirage",
+          "category": "fragrances",
+          "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/12/1.jpg",
+            "https://i.dummyjson.com/data/products/12/2.jpg",
+            "https://i.dummyjson.com/data/products/12/3.png",
+            "https://i.dummyjson.com/data/products/12/4.jpg",
+            "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+          ],
           "quantity": 1
         }
       ],
@@ -33,7 +93,28 @@
       "email": "mohith@gmail.com",
       "phone": 9876543210,
       "password": "mohithpassword",
-      "cart": [],
+      "cart": [
+        {
+          "id": 27,
+          "title": "Flying Wooden Bird",
+          "description": "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
+          "price": 51,
+          "discountPercentage": 15.58,
+          "rating": 4.41,
+          "stock": 17,
+          "brand": "Flying Wooden",
+          "category": "home-decoration",
+          "thumbnail": "https://i.dummyjson.com/data/products/27/thumbnail.webp",
+          "images": [
+            "https://i.dummyjson.com/data/products/27/1.jpg",
+            "https://i.dummyjson.com/data/products/27/2.jpg",
+            "https://i.dummyjson.com/data/products/27/3.jpg",
+            "https://i.dummyjson.com/data/products/27/4.jpg",
+            "https://i.dummyjson.com/data/products/27/thumbnail.webp"
+          ],
+          "quantity": 1
+        }
+      ],
       "id": 2
     }
   ]
