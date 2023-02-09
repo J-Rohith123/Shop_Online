@@ -7,25 +7,6 @@
       "phone": 9876543210,
       "cart": [
         {
-          "id": 6,
-          "title": "MacBook Pro",
-          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-          "price": 1749,
-          "discountPercentage": 11.02,
-          "rating": 4.57,
-          "stock": 83,
-          "brand": "APPle",
-          "category": "laptops",
-          "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
-          "images": [
-            "https://i.dummyjson.com/data/products/6/1.png",
-            "https://i.dummyjson.com/data/products/6/2.jpg",
-            "https://i.dummyjson.com/data/products/6/3.png",
-            "https://i.dummyjson.com/data/products/6/4.jpg"
-          ],
-          "quantity": 2
-        },
-        {
           "id": 20,
           "title": "Freckle Treatment Cream- 15gm",
           "description": "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
@@ -62,6 +43,45 @@
             "https://i.dummyjson.com/data/products/98/3.jpg",
             "https://i.dummyjson.com/data/products/98/4.jpg",
             "https://i.dummyjson.com/data/products/98/thumbnail.jpg"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": 13,
+          "title": "Fog Scent Xpressio Perfume",
+          "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
+          "price": 13,
+          "discountPercentage": 8.14,
+          "rating": 4.59,
+          "stock": 61,
+          "brand": "Fog Scent Xpressio",
+          "category": "fragrances",
+          "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
+          "images": [
+            "https://i.dummyjson.com/data/products/13/1.jpg",
+            "https://i.dummyjson.com/data/products/13/2.png",
+            "https://i.dummyjson.com/data/products/13/3.jpg",
+            "https://i.dummyjson.com/data/products/13/4.jpg",
+            "https://i.dummyjson.com/data/products/13/thumbnail.webp"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "title": "MacBook Pro",
+          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+          "price": 1749,
+          "discountPercentage": 11.02,
+          "rating": 4.57,
+          "stock": 83,
+          "brand": "APPle",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+          "images": [
+            "https://i.dummyjson.com/data/products/6/1.png",
+            "https://i.dummyjson.com/data/products/6/2.jpg",
+            "https://i.dummyjson.com/data/products/6/3.png",
+            "https://i.dummyjson.com/data/products/6/4.jpg"
           ],
           "quantity": 1
         },

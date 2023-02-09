@@ -1,31 +1,19 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 
-export const getProducts=()=>{
-return(dispatch)=>{
-  
-  axios.get("https://dummyjson.com/products?limit=100").then(res =>{
-    
-        dispatch({type:"getproducts",payload:res.data.products})
-})
-}}
-export const getUsers=()=>{
-  return(dispatch)=>{
-    
-    axios.get("http://localhost:8000/users").then(res =>{
-      
+export const getProducts=()=>async(dispatch)=>{
+  let response=await axios.get("https://dummyjson.com/products?limit=100")
+  dispatch({type:"getproducts",payload:response.data.products})
+}
+export const getUsers=()=>async(dispatch)=>{
+    let res=await axios.get("http://localhost:8000/users")
           dispatch({type:"getusers",payload:res.data})
-  })
-  }}
-
-export const setUser=(id)=>{
-  return(dispatch)=>{
-    axios.get("http://localhost:8000/users/"+id)
-    .then(res =>{
-      Cookies.set('loggedinuser',id,{ expires:365 })
-      dispatch({type:'setuser',payload:res.data})
-    })
   }
+
+export const setUser=(id)=>async(dispatch)=>{
+    let res=await axios.get(`http://localhost:8000/users/${id}`)
+    Cookies.set('loggedinuser',id,{ expires:1 })
+    dispatch({type:'setuser',payload:res.data})
 }
 export const addtocart=(product,user)=>{
     axios.put(`http://localhost:8000/users/${user.id}`,{...user,cart:[...user.cart,product]}).catch(err =>console.log(err))

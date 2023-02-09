@@ -27,7 +27,11 @@ function Products() {
    products.map((item)=>console.log(item.category))
    
   },[selectedcates])
-  
+  const Spinner=()=>{
+    return(<div class="spinner-border text-primary" style={{position:'absolute',left:'50%',top:'50%'}}  role="status">
+    <span class="sr-only" >Loading...</span>
+  </div> )
+  }
   return (
     <div className='productspage'>
       <div className='categories'>
@@ -45,7 +49,7 @@ function Products() {
       </div>
     <div className='productsbody'>
       {
-        displayproducts?.map((product)=>{
+        displayproducts[0].name=='none'? <Spinner/> : displayproducts.map((product)=>{
          return <CardLayout key={product.id} product={product} />
         })
       }
