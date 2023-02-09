@@ -18,7 +18,7 @@ function Cartcard(props) {
         <div className='imgbody'>
      <img src={(product?.images?.length>0)? product?.images[0]:product.title} alt={product.title}/></div>
      <div className='details'>
-     <h2>{(!product?.title?.includes(product.brand))? product.brand : null} {product.title}</h2>
+     <h3>{(!product?.title?.includes(product.brand))? product.brand : null} {product.title}</h3>
      <p style={{margin:0,fontSize:'100%'}}><span style={{textDecorationLine:'line-through',color:'GrayText'}}>Rs.{product.price}</span><b style={{fontSize:'140%'}}> Rs.{discountedprice.toFixed(2)}</b> <span style={{color:'blueviolet',fontWeight:700}}>{product.discountPercentage}% Off</span></p>
      </div>
     </div>
