@@ -7,46 +7,6 @@
       "phone": 9876543210,
       "cart": [
         {
-          "id": 20,
-          "title": "Freckle Treatment Cream- 15gm",
-          "description": "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
-          "price": 70,
-          "discountPercentage": 16.99,
-          "rating": 4.06,
-          "stock": 140,
-          "brand": "Fair & Clear",
-          "category": "skincare",
-          "thumbnail": "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/20/1.jpg",
-            "https://i.dummyjson.com/data/products/20/2.jpg",
-            "https://i.dummyjson.com/data/products/20/3.jpg",
-            "https://i.dummyjson.com/data/products/20/4.jpg",
-            "https://i.dummyjson.com/data/products/20/thumbnail.jpg"
-          ],
-          "quantity": 1
-        },
-        {
-          "id": 98,
-          "title": "3 lights lndenpant kitchen islang",
-          "description": "3 lights lndenpant kitchen islang dining room pendant rice paper chandelier contemporary led pendant light modern chandelier",
-          "price": 34,
-          "discountPercentage": 5.92,
-          "rating": 4.99,
-          "stock": 44,
-          "brand": "DADAWU",
-          "category": "lighting",
-          "thumbnail": "https://i.dummyjson.com/data/products/98/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/98/1.jpg",
-            "https://i.dummyjson.com/data/products/98/2.jpg",
-            "https://i.dummyjson.com/data/products/98/3.jpg",
-            "https://i.dummyjson.com/data/products/98/4.jpg",
-            "https://i.dummyjson.com/data/products/98/thumbnail.jpg"
-          ],
-          "quantity": 1
-        },
-        {
           "id": 13,
           "title": "Fog Scent Xpressio Perfume",
           "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
@@ -104,6 +64,42 @@
             "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
           ],
           "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": 20,
+          "title": "Freckle Treatment Cream- 15gm",
+          "description": "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
+          "price": 70,
+          "discountPercentage": 16.99,
+          "rating": 4.06,
+          "stock": 140,
+          "brand": "Fair & Clear",
+          "category": "skincare",
+          "thumbnail": "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/20/1.jpg",
+            "https://i.dummyjson.com/data/products/20/2.jpg",
+            "https://i.dummyjson.com/data/products/20/3.jpg",
+            "https://i.dummyjson.com/data/products/20/4.jpg",
+            "https://i.dummyjson.com/data/products/20/thumbnail.jpg"
+          ],
+          "quantity": 2
         }
       ],
       "id": 1

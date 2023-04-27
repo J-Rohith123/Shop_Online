@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 
 export const getProducts=()=>async(dispatch)=>{
   let response=await axios.get("https://dummyjson.com/products?limit=100")
+  console.log(response.data.products)
   dispatch({type:"getproducts",payload:response.data.products})
 }
 export const getUsers=()=>async(dispatch)=>{
